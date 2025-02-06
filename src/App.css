@@ -1,0 +1,201 @@
+
+body {
+  background-image: url('../public/3129505.jpg');
+  background-size:contain; /* Maintain the image's aspect ratio */
+  background-repeat: no-repeat;
+  background-position: right top; /* Position image to the top-right of the viewport */
+  opacity: 0.8; 
+  background-attachment: fixed; /* Ensures the background stays fixed when scrolling */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensures content is above the background */
+  color: #005bb5; 
+  padding: 20px;
+  text-align: center;
+}
+
+
+.container {
+  max-width: 500px;
+  margin: 30px auto; 
+  padding: 20px;
+  background: rgb(219, 217, 217);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #053063;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #053063;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
+}
+
+/* Summary Section */
+.summary {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.summary p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.summary .income {
+  color: #28a745;
+}
+
+.summary .expenses {
+  color: #dc3545;
+}
+
+.summary .balance {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Transaction List */
+.transaction-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 500px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border-left: 5px solid;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list .income {
+  border-color: #28a745;
+}
+
+.transaction-list .expense {
+  border-color: #dc3545;
+}
+
+.transaction-list span {
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+
+
+/* styles.css */
+
+/* General list item style */
+.list-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  margin-right: -3px;
+  margin-left: -40px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.transcon p{
+  color: red;
+}
+
+/* Income background */
+.bg-income {
+  background-color: #8ff68f; /* Light green */
+}
+
+/* Expense background */
+.bg-expense {
+  background-color: #f47d7d; /* Light red */
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  input, select {
+    font-size: 0.9rem;
+  }
+
+  .summary p {
+    font-size: 0.9rem;
+  }
+
+  .transaction-list span {
+    font-size: 0.9rem;
+  }
+}

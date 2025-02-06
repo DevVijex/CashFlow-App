@@ -1,0 +1,39 @@
+/* Summary.css */
+
+/* Wrapper div for the summary */
+.summ {
+  margin: -2px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Title styling */
+.summ h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+/* General paragraph styling */
+.summ p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Green color for total income */
+.summ .income {
+  color: #10b981; /* Tailwind's green-500 */
+}
+
+/* Red color for total expenses */
+.summ .expense {
+  color: #f87171; /* Tailwind's red-500 */
+}
+
+/* Bold styling for the balance */
+.summ .balance {
+  font-weight: bold;
+}
