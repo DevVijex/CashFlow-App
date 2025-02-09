@@ -20,7 +20,7 @@ body {
 
 
 .container {
-  max-width: 500px;
+  max-width: 525px;
   margin: 30px auto; 
   padding: 20px;
   background: rgb(219, 217, 217);
@@ -28,8 +28,15 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.sim{
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 20px;
+  font-size:small;
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #053063;
   text-align: center;
   margin-top: -10px;
@@ -65,6 +72,8 @@ label {
   margin-bottom: 5px;
 }
 
+
+
 input, select {
   width: 100%;
   padding: 10px;
@@ -80,6 +89,47 @@ input:focus, select:focus {
   border-color: #0077ff;
   box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
 }
+
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem; /* p-2 */
+  border: 1px solid #d1d5db; /* border */
+  border-radius: 0.25rem; /* rounded */
+  font-size: 0.875rem; /* text-sm */
+  font-family: "Arial", sans-serif; /* Font style */
+  font-style: italic; /* Makes the text italic */
+  color: #4b5563; /* Placeholder text color */
+}
+
+.input-field::placeholder {
+  color: #9ca3af; /* Placeholder color */
+}
+
+
+.select-field {
+  width: 100%; /* Full width */
+  padding: 0.5rem; /* Equivalent to p-2 */
+  border: 1px solid #d1d5db; /* Border */
+  border-radius: 0.25rem; /* Rounded corners */
+  font-size: 0.875rem; /* Small text size */
+  color: #4b5563; /* Text color (gray-700) */
+}
+
+.select-field::placeholder {
+  color: #9ca3af; /* Placeholder color */
+}
+
 
 /* Summary Section */
 .summary {

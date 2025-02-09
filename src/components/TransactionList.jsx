@@ -13,7 +13,7 @@ function TransactionList({ transactions }) {
         <ul className="list">
           {transactions.map((t) => (
 <li key={t.id} className={`list-item ${t.type === "income" ? "bg-income" : "bg-expense"}`}>
-  <span>{t.category}</span> {/* Assuming you have a description field */}
+  <span>{t.description}</span> {/* Assuming you have a description field */}
   <span>{t.type === "income" ? "+" : "-"}${t.amount.toFixed(2)}</span> </li> ))}
         </ul>
       ) : (

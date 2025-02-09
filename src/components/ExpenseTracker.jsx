@@ -24,6 +24,7 @@ function ExpenseTracker() {
   return (
     <div className="container">
       <h1 className="content">CashFlow</h1>
+      <p className = "sim"> <i>...Track, Save, Succeed!</i></p>
       <AddTransactionForm addTransaction={addTransaction} />
       <Summary totalIncome={totalIncome} totalExpenses={totalExpenses} balance={balance} />
       <TransactionList transactions={transactions} />
